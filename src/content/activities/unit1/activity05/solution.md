@@ -87,6 +87,7 @@ function drawSquare(x, y, size) {
 
 ### Captura
 <img src="../../../../assets/1-5.png" style="height: 80%; width:80%;" />
+
 ### Explicación
 
 En la visualización con p5.js, los valores generados con randomGaussian(0, 1) siguen una distribución normal, donde los valores cercanos a la media (0) son más frecuentes. 

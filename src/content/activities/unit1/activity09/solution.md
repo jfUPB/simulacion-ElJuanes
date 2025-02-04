@@ -127,5 +127,5 @@ class Path {
 }
 ```
 ### Captura del contenido generado
-<img src="../../../../assets/1-9-1.png" style="height: 80%; width:80%;" />
-<img src="../../../../assets/1-9-2.png" style="height: 80%; width:80%;" />
+<img src="../../../../assets/1-9-1.jpg" style="height: 80%; width:80%;" />
+<img src="../../../../assets/1-9-2.jpg" style="height: 80%; width:80%;" />

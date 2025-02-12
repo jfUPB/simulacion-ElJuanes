@@ -55,5 +55,10 @@ function drawArrow(base, vec, myColor) {
 ```
 
 #### ¿Cómo funciona lerp() y lerpColor().
+La función lerp() realiza una interpolación lineal entre dos valores. Recibe tres parámetros: el valor inicial, el valor final y un valor t entre 0 y 1 que determina la fracción de interpolación entre esos dos valores. La fórmula es:
+lerp(start, end, t) = start + (end - start) * t.
 
+lerpColor() interpola entre dos colores. Toma los colores inicial y final, junto con un valor t que controla la interpolación (0 para el color inicial y 1 para el color final). La fórmula es similar a la de lerp(), pero aplicada a los componentes RGB de los colores.
 #### ¿Cómo se dibuja una flecha usando drawArrow()?
+La función drawArrow() en P5.js se usa para dibujar una flecha. Se pasa como parámetros las coordenadas del punto inicial y final de la flecha, por ejemplo:
+drawArrow(x1, y1, x2, y2) dibuja una flecha desde (x1, y1) hasta (x2, y2), agregando una cabeza en el extremo.

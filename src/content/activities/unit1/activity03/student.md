@@ -45,5 +45,5 @@ class Walker {
 ## ¿Qué aprendiste de este experimento?
 Como lo habia pensado al aftectar el rango de movimiento se genera algo mucho más exagerado con unas formas mucho más grandes, menos definidas y en menor tiempo.
 
-<img src="../../../../assets/1-3.png" style="height: 80%; width:80%;" />
+<img src="/1-3.png" style="height: 80%; width:80%;" />
 

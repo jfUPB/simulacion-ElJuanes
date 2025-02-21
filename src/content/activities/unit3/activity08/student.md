@@ -11,7 +11,8 @@ let friction = this.velocity.copy();:
 
 #### Paso por valor:
  Aquí, copy() crea una nueva copia de this.velocity. Esto significa que cualquier modificación de friction no afectará a this.velocity, ya que son dos objetos independientes.
-let friction = this.velocity;:
 
+### En el fragmento de código:
+ let friction = this.velocity;: 
 #### Paso por referencia:
  En este caso, friction es solo una referencia a this.velocity. Si se cambia friction, se estará modificando directamente a this.velocity, ya que ambos apuntan al mismo objeto.

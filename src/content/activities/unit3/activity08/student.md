@@ -16,3 +16,6 @@ let friction = this.velocity.copy();:
  let friction = this.velocity;: 
 #### Paso por referencia:
  En este caso, friction es solo una referencia a this.velocity. Si se cambia friction, se estará modificando directamente a this.velocity, ya que ambos apuntan al mismo objeto.
+
+### ¿Qué podría salir mal con let friction = this.velocity;?
+Si modificamos friction, también se estaría modificando this.velocity, lo cual puede no ser el comportamiento esperado. Si se quiere trabajar con una copia independiente de this.velocity, debería usarce .copy() para evitar alterar el objeto original.

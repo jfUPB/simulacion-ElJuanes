@@ -195,4 +195,49 @@ Motivo: Agregar un efecto visual atractivo y resaltar la interacción con los bo
 
 ## 4. 4.6: a Particle System with Forces.
 
+https://editor.p5js.org/ElJuanes/full/Zwos2QYzy
+
+Lógica de eliminación eficiente:
+
+Cada partícula tiene una propiedad lifespan que disminuye con el tiempo.
+
+Si lifespan llega a 0, la partícula se marca como eliminada (isDead() devuelve true).
+
+Se usa un bucle inverso para recorrer la lista y eliminar partículas de forma segura.
+
+Eliminación cuando la velocidad es mínima:
+
+Si la partícula se desacelera casi por completo (|velocity| < 0.2), se fuerza su eliminación.
+
+Esto evita que partículas "muertas" consuman memoria innecesariamente.
+
+Lo agregado es una aceleración en este caso desaceleración y que asi cuando se llegue a 0 se borre la particula, generando un efecto de fuente rebote y ya desaparecen poco despues de esto.
+
+## 5. 4.7
+https://editor.p5js.org/ElJuanes/full/NnWGVatEc
+Interacción entre fuerzas y partículas
+
+Concepto: En la simulación física, las partículas pueden ser afectadas por fuerzas externas, como la gravedad y repulsión.
+
+Cómo se aplicó:
+
+Se agregó una fuerza de repulsión en applyRepeller(), que modifica la aceleración de cada partícula. Si la magnitud de la fuerza aplicada es suficiente (f.mag() > 0.1), se cambia su color a rojo.
+
+Por qué: Esto permite visualizar qué partículas fueron afectadas por el repeller, mejorando la claridad del sistema. 
+Movimiento del repeller con el mouse
+
+Concepto: Un objeto en una simulación puede actualizar su posición según la entrada del usuario.
+
+Cómo se aplicó:
+
+Se añadió el método move(x, y) en Repeller, que actualiza su position.
+
+En mouseDragged(), se llama a repeller.move(mouseX, mouseY).
+
+Por qué: Permite al usuario manipular la simulación en tiempo real, haciendo la interacción más dinámica.
+
+Aumento de la fuerza del repeller
+
+Concepto: La repulsión se calcula con una fuerza proporcional a la distancia inversa al cuadrado, similar a la ley de gravitación.
+
 

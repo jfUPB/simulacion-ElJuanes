@@ -234,4 +234,5 @@ class TriangleParticle extends Particle {
 }
 
 ```
+![image](https://github.com/user-attachments/assets/3dc10588-f9dc-463e-9a20-5704936d3883)
 

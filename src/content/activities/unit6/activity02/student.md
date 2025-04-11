@@ -26,11 +26,14 @@ magnitud de la fuerza de dirección (steer) que se puede aplicar en cada fotogra
 
 ## Experimenta con modificaciones:
 
-Opción: Modificar sustancialmente la resolución del campo de flujo.
-Modificación: Cambia la línea flowfield = new FlowField(20); en sketch.js.
-Prueba 1 (Resolución más gruesa): Cámbiala a flowfield = new FlowField(80);.
-Prueba 2 (Resolución más fina): Cámbiala a flowfield = new FlowField(5);.
-Ejecuta y describe el efecto:
+## Opción: Modificar sustancialmente la resolución del campo de flujo.
+Modificación: Cambia la línea flowfield = new FlowField(20) en sketch.js   
+
+Prueba 1 (Resolución más gruesa): Cámbiarla a flowfield = new FlowField(80);
+
+Prueba 2 (Resolución más fina): Cámbiarla a flowfield = new FlowField(5);
+
+## Ejecuta y describe el efecto:
 Con resolución gruesa (ej: 80): Las celdas de la cuadrícula son muy grandes. Los agentes dentro de la misma celda grande seguirán exactamente el mismo vector de dirección. 
 El movimiento general parecerá más "en bloque" o cuantizado. Los agentes tardarán más en reaccionar a los cambios curvos del campo porque el vector que siguen no cambia hasta que
 cruzan a una celda diferente y grande. El campo visualizado (si debug es true) mostrará menos vectores, más espaciados.

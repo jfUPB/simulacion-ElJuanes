@@ -18,7 +18,7 @@ Adaptación del algoritmo base (Flocking):
 Mantendremos las reglas de Separación, Alineación y Cohesión, para simular el comportamiento molecular del agua: mantenerse juntas, moverse de
  forma fluida y evitar colisiones.
 
-Añadiremos una fuerza externa fuerte: “shock” o impulso repentino (como si se moviera la caja). Esta fuerza actuará como el "líder", generando un
+Añadi una fuerza externa fuerte: “shock” o impulso repentino (como si se moviera la caja). Esta fuerza actuará como el "líder", generando un
  efecto en masa.
 
 Esta fuerza será controlada por el usuario (con el mouse) o generada aleatoriamente en momentos inesperados.
@@ -38,11 +38,8 @@ El fondo será una caja rectangular simple, con líneas para definir los límite
 Cuando el impulso externo actúe, se verá un efecto de oleaje o dispersión, simulando cómo el agua reacciona dentro del recipiente.
 
 ### Interacción:
-El mouse representa un impulso externo: si se mueve bruscamente o se hace clic, genera una sacudida que empuja a las partículas en esa dirección.
+Al darle a la S se seleccionara un movimiento repentino en alguno de los 4 ejes el cual afectara el flocking.
 
-Teclas pueden modificar la intensidad del impulso, o el grado de cohesión entre partículas.
-
-Clic puede reiniciar el sistema o cambiar la dirección del impulso.
 ``` js 
 let flock;
 let externalForce;

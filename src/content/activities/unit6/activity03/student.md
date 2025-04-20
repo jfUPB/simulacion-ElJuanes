@@ -33,8 +33,11 @@ Fuerza Máxima (maxforce): Definida en el constructor: this.maxforce = 0.05. Lim
 
 ##  Experimenta con modificaciones:
 Opción: Cambiar drásticamente el peso de una de las reglas.
+
 Modificación: En la función flock(boids), cambia el peso de la cohesión a cero. Modifica la línea coh.mult(1.0); a coh.mult(0.0);.
-Ejecuta y describe el efecto observado: Al eliminar la fuerza de cohesión (coh.mult(0.0);), se observa que los boids ya no sienten atracción 
+
+#### Ejecuta y describe el efecto observado:
+ Al eliminar la fuerza de cohesión (coh.mult(0.0);), se observa que los boids ya no sienten atracción 
 hacia el centro del grupo. Aunque todavía intentan alinearse y separarse, la falta de cohesión hace que el enjambre tienda a dispersarse y 
 separarse en grupos más pequeños o individuos aislados con el tiempo. Pierden la tendencia a agruparse fuertemente. Si un grupo se separa por
 alguna razón (ej: al esquivar un obstáculo o por condiciones iniciales), no tendrá la fuerza necesaria para volver a unirse fácilmente. 
